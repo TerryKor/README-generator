@@ -1,14 +1,15 @@
 # Table of contents
 
 [Title](#title)
-[Description](#description)
-[Instructions](#instruction)
-[Usage](#usage)
-[Contribution](#contribution)
-[GitHub](#github)
-[Email](#email)
-[Communication](#communication)
-[License](#licence)
+   [Description](#description)
+   [Instructions](#instruction)
+   [Usage](#usage)
+   [Contribution](#contribution)
+   [GitHub](#github)
+   [Email](#email)
+   [Communication](#communication)
+    [License](#licence)
+
 # Title
    readme
    
@@ -19,7 +20,7 @@
    click link
 
    # Usage
-   terry
+   information
 
    # Contribution
    terry
@@ -28,7 +29,7 @@
    https://github.com/TerryKor
 
    # Email
-   emal@gmail.com
+   email@gmail.com
 
    # License
    MIT
