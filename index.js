@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
+const path = require("path");
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -69,8 +70,7 @@ function init() {
     var githubLink = `https://github.com/${data.gitHubUsername}`;
     data.gitHubUsername = githubLink
     var readmeCallBack = draftOfReadme(data);
-   
-    fs.writeFile("fileName.md", readmeCallBack, (err)=> err? console.log(err):console.log('Success!'));
+    fs.writeFile("README.md", readmeCallBack, (err)=> err? console.log(err):console.log('Success!'));
   })};
 
 // Function call to initialize app

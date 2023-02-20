@@ -1,38 +1,34 @@
-# Professional README Generator Starter Code
-
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
-
-
 # Table of contents
 
-*[Title](#title)
-*[Description](#description)
-*[Instructions](#instruction)
-*[Usage](#usage)
-*[Contribution](#contribution)
-*[GitHub](#github)
-*[Email](#email)
-*[Communication](#communication)
-*[License](#licence)
-# test
+[Title](#title)
+[Description](#description)
+[Instructions](#instruction)
+[Usage](#usage)
+[Contribution](#contribution)
+[GitHub](#github)
+[Email](#email)
+[Communication](#communication)
+[License](#licence)
+# Title
+   readme
    
    # Description
-   description
+   readme generator
 
    # Instructions 
-   conetne
+   click link
 
    # Usage
-   tsomething
+   terry
 
    # Contribution
-   hello
+   terry
 
    # Github
-   https://github.com/akshatarora7
+   https://github.com/TerryKor
 
    # Email
-   ak@gmail.com
+   emal@gmail.com
 
    # License
    MIT
