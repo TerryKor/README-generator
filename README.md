@@ -1,15 +1,15 @@
-# Table of contents
+ 
+   # Table of contents
 
-   
+  https://img.shields.io/badge/license-MIT-blue  
    * [Title](#title)
    * [Description](#description)
-   * [Instructions](#instruction)
+   * [Instructions](#instructions)
    * [Usage](#usage)
    * [Contribution](#contribution)
    * [GitHub](#github)
    * [Email](#email)
-   * [Communication](#communication)
-   * [License](#licence)
+   * [License](#license)
 
 
    # Title
@@ -31,7 +31,7 @@
    https://github.com/TerryKor
 
    # Email
-   mistefreemann@gmail.com
+   misterfreemann@gmail.com
 
    # License
    MIT

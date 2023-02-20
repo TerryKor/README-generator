@@ -42,7 +42,7 @@ const questions = [
   },
   {
     type: "list",
-    message: "What is your preferred method of communication?",
+    message: "Choose your project license:",
     name: "license",
     choices: [
       "MIT",
@@ -89,17 +89,18 @@ init();
 function draftOfReadme(data) {
   var githubLink = `https://github.com/${data.gitHubUsername}`;
   console.log(githubLink);
-  let readme = `# Table of contents\n\n`;
-   readme += `   
+  var badgeURL = `https://img.shields.io/badge/license-${data.license}-blue`
+  
+  let readme = ` 
+   # Table of contents ${badgeURL}\n\n  
    * [Title](#title)
    * [Description](#description)
-   * [Instructions](#instruction)
+   * [Instructions](#instructions)
    * [Usage](#usage)
    * [Contribution](#contribution)
    * [GitHub](#github)
    * [Email](#email)
-   * [Communication](#communication)
-   * [License](#licence)\n\n`;
+   * [License](#license)\n\n`;
 
 
    readme +=`
