@@ -66,11 +66,12 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((data) => {
     console.log(data);
-
-    var readme = draftOfReadme(data);
-    writeToFile("fileName.md", readme);
-  });
-}
+    var githubLink = `https://github.com/${data.gitHubUsername}`;
+    data.gitHubUsername = githubLink
+    var readmeCallBack = draftOfReadme(data);
+   
+    fs.writeFile("fileName.md", readmeCallBack, (err)=> err? console.log(err):console.log('Success!'));
+  })};
 
 // Function call to initialize app
 init();
@@ -88,7 +89,50 @@ init();
 function draftOfReadme(data) {
   var githubLink = `https://github.com/${data.gitHubUsername}`;
   console.log(githubLink);
-  let readme = `title: ${data.title}`;
+  let readme = `# Table of contents\n\n`;
+   readme += `[Title](#title)\n`;
+   readme += `[Description](#description)\n`;
+   readme += `[Instructions](#instruction)\n`;
+   readme += `[Usage](#usage)\n`;
+   readme += `[Contribution](#contribution)\n`
+   readme += `[GitHub](#github)\n`;
+   readme += `[Email](#email)\n`;
+   readme += `[Communication](#communication)\n`;
+   readme += `[License](#licence)\n`;
+
+
+   readme +=`# Title
+   ${data.title}
+   
+   # Description
+   ${data.description}
+
+   # Instructions 
+   ${data.installationInstructions}
+
+   # Usage
+   ${data.usageInformation}
+
+   # Contribution
+   ${data.contributionGuidelines}
+
+   # Github
+   ${data.gitHubUsername}
+
+   # Email
+   ${data.emailAddress}
+
+   # License
+   ${data.license}
+
+   `
+
+
+
+
+
+
+
 
   return readme;
 }
