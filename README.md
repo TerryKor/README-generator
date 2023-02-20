@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Title](#title)
+   
+   * [Title](#title)
    * [Description](#description)
    * [Instructions](#instruction)
    * [Usage](#usage)
@@ -10,7 +11,8 @@
    * [Communication](#communication)
    * [License](#licence)
 
-# Title
+
+   # Title
    README
    
    # Description
@@ -29,7 +31,7 @@
    https://github.com/TerryKor
 
    # Email
-   misterfreemann@gmail.com
+   mistefreemann@gmail.com
 
    # License
    MIT

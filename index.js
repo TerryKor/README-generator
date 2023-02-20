@@ -90,7 +90,8 @@ function draftOfReadme(data) {
   var githubLink = `https://github.com/${data.gitHubUsername}`;
   console.log(githubLink);
   let readme = `# Table of contents\n\n`;
-   readme += `* [Title](#title)
+   readme += `   
+   * [Title](#title)
    * [Description](#description)
    * [Instructions](#instruction)
    * [Usage](#usage)
@@ -101,7 +102,8 @@ function draftOfReadme(data) {
    * [License](#licence)\n\n`;
 
 
-   readme +=`# Title
+   readme +=`
+   # Title
    ${data.title}
    
    # Description
