@@ -92,7 +92,7 @@ function draftOfReadme(data) {
   var badgeURL = `https://img.shields.io/badge/license-${data.license}-blue`
   
   let readme = ` 
-   # Table of contents ${badgeURL}\n\n  
+   # Table of contents ![badge](${badgeURL})\n\n  
    * [Title](#title)
    * [Description](#description)
    * [Instructions](#instructions)

@@ -1,7 +1,7 @@
  
-   # Table of contents
+   # Table of contents ![badge](https://img.shields.io/badge/license-MIT-blue)
 
-  https://img.shields.io/badge/license-MIT-blue  
+  
    * [Title](#title)
    * [Description](#description)
    * [Instructions](#instructions)
