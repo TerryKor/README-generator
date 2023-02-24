@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// variables getting data from inquirer modules/pakcage
 const inquirer = require("inquirer");
 const fs = require("fs");
-const path = require("path");
-// TODO: Create an array of questions for user input
+
+// variable array of questions for user input
 const questions = [
   {
     type: "input",
@@ -53,48 +53,27 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFile((fileName, data, error) => {
-    if (error) {
-      return console.log(error);
-    }
-    console.log("Successful");
-  });
-}
-
-// TODO: Create a function to initialize app
+// function to write code to readme file , if successesful prints "'Success!'" otherwise prints error
 function init() {
   inquirer.prompt(questions).then((data) => {
     console.log(data);
-    var githubLink = `https://github.com/${data.gitHubUsername}`;
-    data.gitHubUsername = githubLink
     var readmeCallBack = draftOfReadme(data);
-    fs.writeFile("README.md", readmeCallBack, (err)=> err? console.log(err):console.log('Success!'));
-  })};
+    fs.writeFile("sampleOfGeneratedREADME.md", readmeCallBack, (err) =>
+      err ? console.log(err) : console.log("Success!")
+    );
+  });
+}
 
-// Function call to initialize app
 init();
 
-// inquirer
-//   .prompt(questions)
-//   .then((data) => {
-//     const filename = `${data.name.toLowerCase().split(' ').join('')}.json`;
-
-//     fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-//       err ? console.log(err) : console.log('Success!')
-//     );
-//   });
-
+// function that creates readme content and putting data into sections
 function draftOfReadme(data) {
   var githubLink = `https://github.com/${data.gitHubUsername}`;
   console.log(githubLink);
-  var badgeURL = `https://img.shields.io/badge/license-${data.license}-blue`
-  
-  let readme = ` 
-   # Table of contents ![badge](${badgeURL})\n\n  
-   * [Title](#title)
-   * [Description](#description)
+  var badgeURL = `https://img.shields.io/badge/license-${data.license}-blue`;
+
+  let toc = ` 
+   # Table of contents \n\n
    * [Instructions](#instructions)
    * [Usage](#usage)
    * [Contribution](#contribution)
@@ -102,13 +81,14 @@ function draftOfReadme(data) {
    * [Email](#email)
    * [License](#license)\n\n`;
 
-
-   readme +=`
-   # Title
+  let readme = `
+   # Title ![badge](${badgeURL})
    ${data.title}
    
    # Description
    ${data.description}
+
+   ${toc}
 
    # Instructions 
    ${data.installationInstructions}
@@ -120,7 +100,7 @@ function draftOfReadme(data) {
    ${data.contributionGuidelines}
 
    # Github
-   ${data.gitHubUsername}
+   [${data.gitHubUsername}](${githubLink})
 
    # Email
    ${data.emailAddress}
@@ -128,14 +108,7 @@ function draftOfReadme(data) {
    # License
    ${data.license}
 
-   `
-
-
-
-
-
-
-
+   `;
 
   return readme;
 }

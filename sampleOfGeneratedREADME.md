@@ -22,10 +22,10 @@
    clone GitHub repository named "README generator", go to the file location, open with terminal and enter "node index.js" in command line
 
    # Usage
-   watch the video demostration:
+   watch the video demostration in README file'
 
    # Contribution
-   aapplication was created by Terry Kornienko and if you want to contribute send me email.s
+   application was created by Terry Kornienko and if you want to contribute send me email.
 
    # Github
    [TerryKor](https://github.com/TerryKor)
