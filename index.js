@@ -83,30 +83,30 @@ function draftOfReadme(data) {
 
   let readme = `
    # Title ![badge](${badgeURL})
-   ${data.title}
+${data.title}
    
    # Description
-   ${data.description}
+${data.description}
 
    ${toc}
 
    # Instructions 
-   ${data.installationInstructions}
+${data.installationInstructions}
 
    # Usage
-   ${data.usageInformation}
+${data.usageInformation}
 
    # Contribution
-   ${data.contributionGuidelines}
+${data.contributionGuidelines}
 
    # Questions
    My Email: 
-   [${data.emailAddress}](mailto:${data.emailAddress})
+[${data.emailAddress}](mailto:${data.emailAddress})
    My Github:
-   [${data.gitHubUsername}](${githubLink})
+[${data.gitHubUsername}](${githubLink})
    
    # License
-   ${data.license}
+${data.license}
 
    `;
 
