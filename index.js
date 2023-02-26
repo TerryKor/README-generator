@@ -99,12 +99,12 @@ function draftOfReadme(data) {
    # Contribution
    ${data.contributionGuidelines}
 
-   # Github
+   # Questions
+   My Email: 
+   [${data.emailAddress}](mailto:${data.emailAddress})
+   My Github:
    [${data.gitHubUsername}](${githubLink})
-
-   # Email
-   ${data.emailAddress}
-
+   
    # License
    ${data.license}
 
