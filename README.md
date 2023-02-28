@@ -12,8 +12,7 @@
    * [Instructions](#instructions)
    * [Usage](#usage)
    * [Contribution](#contribution)
-   * [GitHub](#github)
-   * [Email](#email)
+   * [Questions](#questions)
    * [License](#license)
 
 
@@ -22,7 +21,7 @@
    clone GitHub repository named "README generator", go to the file location, open with terminal and enter "node index.js" in command line
 
    # Usage
-   watch the video demostration:https://drive.google.com/file/d/1RVbfptx5mykHHV_aFr3FtDeXjQDcQBT1/view
+   watch the [video demonstration](https://drive.google.com/file/d/1RVbfptx5mykHHV_aFr3FtDeXjQDcQBT1/view)
 
    # Contribution
    application was created by Terry Kornienko and if you want to contribute send me email.
